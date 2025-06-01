@@ -14,9 +14,12 @@ struct ContentView: View {
     @State private var selectedDifficulty: String = "All"
     
     // To highlight the correct answer button when the answer is wrong.
-    @State private var highlightedCorrectAnswer: Int? = nil
+    @State private var highlightedCorrectAnswer: Int? = nil // Index in shuffledAnswerTexts
     // Új állapot változó a "Következő kérdés" gombhoz
     @State private var showNextButton = false
+    
+    // New state for shuffled answer texts
+    @State private var shuffledAnswerTexts: [String] = []
     
     var body: some View {
         ZStack {
@@ -36,6 +39,7 @@ struct ContentView: View {
                                 viewModel.selectedCategory = nil
                                 viewModel.loadQuestions()
                                 viewModel.getNextQuestion()
+                                // Shuffling will be handled by .onChange or .onAppear of the question block
                             }
                             ForEach(QuestionTopic.allCases, id: \.self) { category in
                                 Button("\(category.rawValue)") {
@@ -43,6 +47,7 @@ struct ContentView: View {
                                     viewModel.selectedCategory = category
                                     viewModel.loadQuestions()
                                     viewModel.getNextQuestion()
+                                    // Shuffling will be handled by .onChange or .onAppear of the question block
                                 }
                             }
                         } label: {
@@ -62,6 +67,7 @@ struct ContentView: View {
                                     viewModel.selectedDifficulty = level
                                     viewModel.loadQuestions()
                                     viewModel.getNextQuestion()
+                                    // Shuffling will be handled by .onChange or .onAppear of the question block
                             }
                                 }
                         } label: {
@@ -72,6 +78,13 @@ struct ContentView: View {
                                 .background(Color.gray.opacity(0.7))
                                 .cornerRadius(10)
                         }
+                        
+                        // Questions remaining counter
+                        Text("Hátravan: \(viewModel.questions.count)")
+                            .foregroundColor(.white)
+                            .padding(.horizontal)
+                            .background(Color.black.opacity(0.5))
+                            .cornerRadius(8)
                     }
                     .padding()
                     
@@ -87,13 +100,15 @@ struct ContentView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .multilineTextAlignment(.center)
                             
-                            ForEach(0..<4, id: \.self) { index in
+                            // Use shuffledAnswerTexts for buttons
+                            ForEach(shuffledAnswerTexts.indices, id: \.self) { index in
                                 Button(action: { checkAnswer(selectedIndex: index) }) {
-                                    Text(getAnswerText(for: question, index: index))
+                                    Text(shuffledAnswerTexts[index]) // Display shuffled answer text
                                         .font(.system(size: 20, weight: .medium, design: .rounded))
                                         .foregroundColor(.white)
                                         .frame(maxWidth: .infinity)
                                         .padding()
+                                        // Highlight based on index in shuffled list
                                         .background(highlightedCorrectAnswer == index ? Color.green : Color.gray.opacity(0.7))
                                         .cornerRadius(10)
                                         .shadow(radius: 5)
@@ -102,7 +117,6 @@ struct ContentView: View {
                                         .lineLimit(nil)
                                         .minimumScaleFactor(0.7)
                                 }
-                                // Gombok letiltása, ha showFeedback igaz
                                 .disabled(showFeedback)
                             }
                             
@@ -115,21 +129,20 @@ struct ContentView: View {
                                     .fixedSize(horizontal: false, vertical: true)
                                     .multilineTextAlignment(.center)
                             }
-                            // "Következő kérdés" gomb csak ha showNextButton igaz
                             if showNextButton {
                                 Button("Következő kérdés") {
-                                    // Ha helyes volt az előző válasz, töröljük a kérdést
                                     if answerFeedback == "Correct!" {
                                         viewModel.markCurrentQuestionAnsweredCorrectly()
                                     }
                                     withAnimation(.easeInOut) {
                                         showFeedback = false
                                         backgroundGradient = defaultGradient
-                                        highlightedCorrectAnswer = nil
+                                        // highlightedCorrectAnswer is reset by shuffleAnswersForCurrentQuestion
                                         showNextButton = false
                                     }
-                                    viewModel.getNextQuestion()
+                                    viewModel.getNextQuestion() // This will trigger shuffle via .onChange
                                 }
+                                // ... (rest of button styling)
                                 .font(.system(size: 20, weight: .medium, design: .rounded))
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
@@ -144,6 +157,16 @@ struct ContentView: View {
                             }
                         }
                         .padding()
+                        // Shuffle answers when this view appears or when the question changes
+                        .onAppear {
+                            shuffleAnswersForCurrentQuestion()
+                        }
+                        // Assuming Question struct has an 'id' property or questionText is unique enough
+                        // If Question is not Identifiable or Hashable, this might need adjustment
+                        // Using questionText as a fallback if 'id' is not available or suitable
+                        .onChange(of: question.questionText) { _ in
+                            shuffleAnswersForCurrentQuestion()
+                        }
                     } else {
                         VStack(spacing: 20) {
                             Text("No questions available.")
@@ -174,45 +197,58 @@ struct ContentView: View {
         .onAppear {
             viewModel.loadQuestions()
             viewModel.getNextQuestion()
+            // Initial shuffle is handled by the .onAppear of the question's VStack
         }
     }
     
-    private func getAnswerText(for question: Question, index: Int) -> String {
-        switch index {
-        case 0: return question.answerA
-        case 1: return question.answerB
-        case 2: return question.answerC
-        case 3: return question.answerD
-        default: return ""
+    // Removed getAnswerText(for: Question, index: Int)
+    
+    // Removed convertLetterToIndex(letter: String)
+
+    // New function to shuffle answers for the current question
+    private func shuffleAnswersForCurrentQuestion() {
+        if let question = viewModel.currentQuestion {
+            shuffledAnswerTexts = [question.answerA, question.answerB, question.answerC, question.answerD].shuffled()
+            highlightedCorrectAnswer = nil // Reset highlight when question changes
+        } else {
+            shuffledAnswerTexts = []
         }
     }
-    
-    private func convertLetterToIndex(letter: String) -> Int {
-        switch letter {
-        case "A": return 0
-        case "B": return 1
-        case "C": return 2
-        case "D": return 3
-        default: return -1
+
+    // New helper to get the text of the correct answer
+    private func getCorrectAnswerText(for question: Question) -> String {
+        switch question.correctAnswer {
+        case "A": return question.answerA
+        case "B": return question.answerB
+        case "C": return question.answerC
+        case "D": return question.answerD
+        default: return "" // Should not happen with valid data
         }
     }
     
     private func checkAnswer(selectedIndex: Int) {
-        guard let question = viewModel.currentQuestion else { return }
-        let correctIndex = convertLetterToIndex(letter: question.correctAnswer)
+        guard let question = viewModel.currentQuestion, selectedIndex < shuffledAnswerTexts.count else { return }
+        
+        let selectedAnswerText = shuffledAnswerTexts[selectedIndex]
+        let actualCorrectAnswerText = getCorrectAnswerText(for: question)
+        
         withAnimation(.easeInOut) {
-            if getAnswerText(for: question, index: selectedIndex) ==
-               getAnswerText(for: question, index: correctIndex) {
+            if selectedAnswerText == actualCorrectAnswerText {
                 backgroundGradient = [Color.green.opacity(0.5), Color.green]
                 answerFeedback = "Correct!"
-                highlightedCorrectAnswer = nil
+                highlightedCorrectAnswer = nil // No need to highlight if correct
             } else {
                 backgroundGradient = [Color.red.opacity(0.5), Color.red]
                 answerFeedback = "Wrong!"
-                highlightedCorrectAnswer = correctIndex
+                // Find the index of the actual correct answer in the shuffled list
+                if let correctShuffledIndex = shuffledAnswerTexts.firstIndex(of: actualCorrectAnswerText) {
+                    highlightedCorrectAnswer = correctShuffledIndex
+                } else {
+                    highlightedCorrectAnswer = nil // Should not happen if data is consistent
+                }
             }
             showFeedback = true
-            showNextButton = true // Következő gomb megjelenítése
+            showNextButton = true
         }
         // Az automatikus továbblépés eltávolítva
     }

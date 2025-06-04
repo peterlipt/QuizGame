@@ -24,6 +24,7 @@ enum QuestionTopic: String, CaseIterable {
     case LANmeres = "LAN mérés"
     case iptvmeres = "IPTV mérés"
     case voipmeres = "VoIP mérés"
+    case roviditesek = "Rövidítések"
     
     case other = "OTHER"
 }

@@ -984,3 +984,207 @@
 32;3;Melyik Wireshark display filter operátor jelenti a "nem egyenlő" (not equal to) összehasonlítást?;A: ==;B: <=;C: !=;D: &&;C;VoIP mérés
 33;4;Melyik Wireshark display filter kifejezés illeszkedik a TCP port 25-re?;A: tcp.port >= 80;B: tcp.port eq 25;C: tcp.port < 100;D: tcp.port != 25;B;VoIP mérés
 34;5;Mi a "promiscuous mode" működése Wireshark esetén, ha az adott interfész nem az összes csomagnak szól?;A: Csak a saját MAC címre szóló csomagokat fogja látni.;B: Minden csomagot megkap, amit a hálózati kártya "lát".;C: Csak a broadcast csomagokat kapja meg.;D: Csak a titkosított csomagokat kapja meg.;B;VoIP mérés
+1;1;Mi a DNS rövidítés feloldása?;A) Data Network Service;B) Domain Name System;C) Digital Naming Standard;D) Dynamic Network Server;B;Rövidítések
+2;1;Mit jelent a HTTP rövidítés?;A) HyperText Transmission Protocol;B) High-level Transferring Program;C) HyperText Transfer Protocol;D) Home Terminal Transferring Protocol;C;Rövidítések
+3;1;Mi a FTP protokoll rövidítés feloldása?;A) Fast Transfer Protocol;B) File Transfer Protocol;C) Flexible Transferring Program;D) Formal Text Processing;B;Rövidítések
+4;1;Mit takar a P2P rövidítés?;A) Public-to-Private;B) Peer-to-Peer;C) Point-to-Point;D) Protocol-to-Protocol;B;Rövidítések
+5;1;Mit jelent a LAN rövidítés?;A) Large Area Network;B) Local Area Network;C) Long Area Network;D) Limited Area Network;B;Rövidítések
+6;1;Mit jelent az ACK rövidítés a protokollokban?;A) Active Connection Key;B) Acknowledgment;C) Access Control Key;D) Automated Communication;B;Rövidítések
+7;1;Mi a VoIP rövidítés?;A) Voice over Internet Protocol;B) Video over IP;C) Voice over Integrated Protocol;D) Virtual Office IP;A;Rövidítések
+8;1;Mi a Wi-Fi rövidítés becenévként?;A) Wireless Filter;B) Wireless Feature;C) Wireless Fidelity;D) Wireless Function;C;Rövidítések
+9;1;Mi a DL rövidítés feloldása mobilhálózatokban?;A) Data Link;B) Downlink;C) Digital Link;D) Delivery Layer;B;Rövidítések
+10;1;Mit jelent az UL rövidítés mobilhálózatokban?;A) Uplink;B) User Layer;C) Unicast Link;D) Universal Layer;A;Rövidítések
+11;1;Mi az IPTV rövidítés feloldása?;A) Internet Protocol Television;B) Integrated Personal Television;C) International Program Television;D) Interactive Packet Television;A;Rövidítések
+12;1;Mi a KWh rövidítés?;A) Kilo Watt hour;B) Kilo Wireless hour;C) Kinetic Watt hour;D) Key Watt hour;A;Rövidítések
+13;1;Mit jelent a TWh rövidítés?;A) Tera Watt hour;B) Total Watt hour;C) Transmission Watt hour;D) Terrestrial Wireless hour;A;Rövidítések
+14;1;Mi az SSH rövidítés feloldása?;A) Secure System Host;B) Secure Shell;C) Simple Server Host;D) Standard Secure Hashing;B;Rövidítések
+15;2;Mi az SMTP protokoll rövidítés feloldása?;A) Secure Mail Transfer Protocol;B) Simple Mail Transfer Protocol;C) Standard Messaging Transport Protocol;D) System Management Transfer Protocol;B;Rövidítések
+16;2;Mit jelent a POP rövidítés az elektronikus levelezésben?;A) Personal Online Protocol;B) Post Office Protocol;C) Peer-to-peer Output Protocol;D) Private Operating Protocol;B;Rövidítések
+17;2;Mi az IMAP protokoll rövidítés feloldása?;A) Internet Messaging Access Protocol;B) Integrated Mail Access Protocol;C) Internet Mail Application Protocol;D) International Message Authentication Protocol;A;Rövidítések
+18;2;Mi a QoS rövidítés feloldása a hálózati szolgáltatásokban?;A) Quality of Software;B) Quantity of Service;C) Quality of Service;D) Quick Operation System;C;Rövidítések
+19;2;Mi a CSMA rövidítés feloldása?;A) Control Sense Multiple Access;B) Carrier Sense Multiple Access;C) Collision Sense Multiple Access;D) Centralized System Management Access;B;Rövidítések
+20;2;Mit takar a CSMA/CD rövidítés?;A) Carrier Sense Multiple Access with Collision Detection;B) Collision Sensitive Multiple Access with Carrier Delay;C) Common System Management Access with Centralized Database;D) Contention Service Multiple Access with Coherent Detection;A;Rövidítések
+21;2;Mit jelent a VLAN rövidítés?;A) Virtual Local Area Network;B) Voice Local Area Network;C) Video Link Access Network;D) Volatile Local Area Network;A;Rövidítések
+22;2;Mit takar az UTP rövidítés?;A) Under-shielded Twisted Pair;B) Unshielded Twisted Pair;C) Universal Transfer Protocol;D) User-defined Transfer Protocol;B;Rövidítések
+23;2;Mi a STP rövidítés feloldása a sodort érpár kábelek esetén?;A) Standard Twisted Pair;B) Shielded Twisted Pair;C) Secure Transmission Protocol;D) System Testing Procedure;B;Rövidítések
+24;2;Mi a TDM rövidítés feloldása?;A) Total Data Management;B) Time Division Multiplexing;C) Transparent Data Modulation;D) Twisted Data Management;B;Rövidítések
+25;2;Mit jelent az FDM rövidítés?;A) Fast Data Management;B) Frequency Division Multiplexing;C) File Data Management;D) Flexible Data Modulation;B;Rövidítések
+26;2;Mi a FQDN rövidítés feloldása?;A) Fully Qualified Domain Name;B) Fast Query Domain Name;C) File Quality Data Network;D) Frequent Query Domain Name;A;Rövidítések
+27;2;Mi a TLD rövidítés feloldása a DNS-ben?;A) Technical Layer Domain;B) Top-Level Domain;C) Trusted Local Domain;D) Transparent Log Domain;B;Rövidítések
+28;2;Mi a TTL rövidítés feloldása a DNS cache-ben?;A) Time To Live;B) Total Transfer Length;C) Transient Type Look-up;D) Temporary Table Limit;A;Rövidítések
+29;2;Mi a DHCP rövidítés feloldása?;A) Data Host Control Protocol;B) Domain Host Configuration Protocol;C) Dynamic Host Configuration Protocol;D) Digital Host Connectivity Protocol;C;Rövidítések
+30;2;Mi a NAT rövidítés feloldása az IP-ben?;A) Network Access Translation;B) Network Address Translation;C) Name Association Table;D) Next Active Transfer;B;Rövidítések
+31;2;Mi a TTL rövidítés feloldása az IP fejlécben?;A) Total Transfer Limit;B) Temporary Time Link;C) Time To Live;D) Transmission Time Length;C;Rövidítések
+32;2;Mi az ARP rövidítés feloldása?;A) Application Resolution Protocol;B) Address Resolution Protocol;C) Automatic Routing Protocol;D) Advanced Resource Protocol;B;Rövidítések
+33;2;Mi a RIP rövidítés feloldása?;A) Route Information Protocol;B) Routing Information Protocol;C) Real-time Internet Protocol;D) Remote Information Protocol;B;Rövidítések
+34;2;Mi az AS rövidítés a routingban?;A) Application Server;B) Autonomous System;C) Access System;D) Advanced Switching;B;Rövidítések
+35;2;Mi az ICMP rövidítés feloldása?;A) Internet Control Message Protocol;B) Internet Connection Management Protocol;C) Internal Control and Monitoring Protocol;D) Integrated Communication Management Protocol;A;Rövidítések
+36;2;Mi a PSTN rövidítés?;A) Private Switched Telephone Network;B) Public Switched Telephone Network;C) Packet Switched Telecommunication Network;D) Personal Subscriber Telephone Number;B;Rövidítések
+37;2;Mi az NGN rövidítés feloldása?;A) New Generation Network;B) Next Generation Networks;C) National Gateway Network;D) Network Global Navigator;B;Rövidítések
+38;2;Mi a PCM rövidítés feloldása?;A) Packet Compression Method;B) Pulse Code Modulation;C) Protocol Control Module;D) Personal Communication Manager;B;Rövidítések
+39;2;Mit jelent az A/D rövidítés a digitalizálásban?;A) Analog/Digital;B) Access/Discovery;C) Audio/Data;D) Address/Domain;A;Rövidítések
+40;2;Mi az MOS rövidítés feloldása a hangminőség mérésében?;A) Mean Opinion Score;B) Mobile Operating System;C) Maximum Output Signal;D) Multimedia Object Standard;A;Rövidítések
+41;2;Mi a GPRS rövidítés feloldása?;A) General Packet Radio Service;B) Global Position Radio System;C) General Public Radio Service;D) Gateway Packet Routing System;A;Rövidítések
+42;2;Mit jelent az EDGE rövidítés?;A) Enhanced Data for GSM Evolution;B) Ethernet Data Gateway Exchange;C) Extended Digital Global Environment;D) European Digital Group Exchange;A;Rövidítések
+43;2;Mi az UMTS rövidítés feloldása?;A) Universal Mobile Telecommunications System;B) Unified Multimedia Transmission Service;C) Uplink Mobile Transfer System;D) User Management and Tracking System;A;Rövidítések
+44;2;Mit jelent a HSPA rövidítés?;A) High-Speed Packet Access;B) Hybrid Service Provider Access;C) Home System Packet Architecture;D) Handheld Service Protocol Application;A;Rövidítések
+45;2;Mi a HSDPA rövidítés feloldása?;A) High Speed Downlink Packet Access;B) Home Subscriber Data Packet Access;C) Host System Data Processing Access;D) High Security Data Protocol Application;A;Rövidítések
+46;2;Mit jelent a HSUPA rövidítés?;A) High Speed Uplink Packet Access;B) Home Subscriber Uplink Packet Access;C) High Security Uplink Protocol Application;D) Hybrid System Uplink Packet Access;A;Rövidítések
+47;2;Mi a SIP rövidítés?;A) Secure Internet Protocol;B) Session Initiation Protocol;C) Simple Interface Protocol;D) System Integration Protocol;B;Rövidítések
+48;2;Mi az RTP rövidítés?;A) Reliable Transfer Protocol;B) Real-time Transport Protocol;C) Routing and Tunneling Protocol;D) Remote Terminal Protocol;B;Rövidítések
+49;2;Mi az EPG rövidítés feloldása IPTV-ben?;A) Electronic Program Guide;B) Enhanced Program Generation;C) Event Planning Group;D) Expert Protocol Guide;A;Rövidítések
+50;2;Mit jelent az IGMP rövidítés?;A) Internet Gateway Management Protocol;B) Internet Group Management Protocol;C) Integrated Group Messaging Protocol;D) International Gateway Management Protocol;B;Rövidítések
+51;2;Mit jelent a CDN rövidítés az Internet TV-ben?;A) Central Data Network;B) Content Delivery Network;C) Cloud Distribution Network;D) Communication Data Network;B;Rövidítések
+52;2;Mi az OTT rövidítés feloldása?;A) Open To All;B) Over-the-top;C) Online Television Technology;D) Optimal Transfer Time;B;Rövidítések
+53;2;Mit jelent a DVB rövidítés?;A) Digital Video Broadcasting;B) Dynamic Video Bandwidth;C) Distributed Video Broadcast;D) Digital Voice Bandwidth;A;Rövidítések
+54;2;Mit jelent a CBR rövidítés a médiakódolásban?;A) Compressed Bit Rate;B) Constant Bitrate;C) Current Bandwidth Rate;D) Coded Bit Rate;B;Rövidítések
+55;2;Mi a VBR rövidítés feloldása a médiakódolásban?;A) Verified Bitrate;B) Variable Bitrate;C) Video Bit Resolution;D) Voice Bandwidth Rate;B;Rövidítések
+56;2;Mi az SNR rövidítés feloldása a rádiókommunikációban?;A) System Noise Reduction;B) Signal-to-Noise Ratio;C) Synchronous Network Reliability;D) Software Network Requirements;B;Rövidítések
+57;2;Mit jelent a BER rövidítés?;A) Bandwidth Efficiency Ratio;B) Bit Error Rate;C) Broadcast Error Recovery;D) Baseband Encoding Rate;B;Rövidítések
+58;2;Mi az SSID rövidítés feloldása Wi-Fi-ben?;A) Secure System ID;B) Service Set Identifier;C) Standard System Interface Descriptor;D) Static Service ID;B;Rövidítések
+59;2;Mit jelent az AP rövidítés Wi-Fi-ben?;A) Access Point;B) Application Protocol;C) Antenna Port;D) Authentication Protocol;A;Rövidítések
+60;2;Mi az LTE rövidítés feloldása?;A) Local Terminal Equipment;B) Long Term Evolution;C) Low Transmission Efficiency;D) Light Transferring Environment;B;Rövidítések
+61;2;Mi a VoLTE rövidítés feloldása?;A) Voice over Long Term Evolution;B) Video over LTE;C) Voice over Local Area Network;D) Virtualized LTE Operations;A;Rövidítések
+62;2;Mit jelent a VoWiFi rövidítés?;A) Voice over Wireless Fidelity;B) Video over WiFi;C) Virtualized WiFi Operations;D) Voice over Wideband Internet Function;A;Rövidítések
+63;2;Mi az SA rövidítés 5G bevezetésnél?;A) Service Access;B) Standalone;C) System Architecture;D) Spectrum Aggregation;B;Rövidítések
+64;2;Mit jelent az NSA rövidítés 5G bevezetésnél?;A) Non-Standalone;B) Network Service Area;C) New System Architecture;D) Next Service Arrangement;A;Rövidítések
+65;2;Mi a QoS rövidítés feloldása VoLTE hordozók kapcsán?;A) Quality of Service;B) Quantity of Signal;C) Quick Optimization System;D) Quiet Operating System;A;Rövidítések
+66;2;Mi a BSSID rövidítés Wi-Fi-ben?;A) Basic Service Set Identifier;B) Base Station System ID;C) Broadcast Service Set Identifier;D) Beacon System ID;A;Rövidítések
+67;2;Mi az ADSL rövidítés?;A) Advanced Digital Subscriber Line;B) Asymmetric Digital Subscriber Line;C) Automatic Data Service Line;D) Access Digital Subscriber Line;B;Rövidítések
+68;2;Mit jelent az ISDN rövidítés?;A) Integrated Services Digital Network;B) International Standard Digital Network;C) Internet Service Data Network;D) Integrated Subscriber Digital Node;A;Rövidítések
+69;2;Mi az IANA rövidítés feloldása?;A) Internet Assigned Numbers Authority;B) International Access Network Agency;C) Internet Architecture Network Association;D) Integrated Access Naming Authority;A;Rövidítések
+70;2;Mit jelent az SSL/TLS rövidítés?;A) Secure Socket Layer / Transport Layer Security;B) Standard Secure Link / Trusted Link Service;C) System Security Layer / Transfer Layer Safety;D) Software Security Logic / Technical Link Standard;A;Rövidítések
+71;2;Mi a SCP rövidítés?;A) Secure Copy Protocol;B) System Control Protocol;C) Standard Client Protocol;D) Secure Connection Point;A;Rövidítések
+72;2;Mit jelent az HTTP/2 rövidítés?;A) HyperText Transfer Protocol version 2;B) High-speed Transfer Protocol version 2;C) Home Terminal Transfer Protocol version 2;D) Hybrid Text Transfer Protocol version 2;A;Rövidítések
+73;2;Mi a Pcap/Pcapng rövidítés?;A) Packet Capture;B) Protocol Capture;C) Process Capture;D) Port Capture;A;Rövidítések
+74;3;Mi a d_trans képletében a "L" rövidítés?;A) Link sebesség;B) Link távolság;C) Csomaghossz;D) Késleltetés;C;Rövidítések
+75;3;Mi a d_prop rövidítés feloldása a késleltetés összetevői között?;A) Processing delay;B) Propagation delay;C) Queuing delay;D) Transmission delay;B;Rövidítések
+76;3;Mi a d_nodal rövidítés feloldása?;A) Network delay;B) Nodal delay;C) Naming delay;D) Node detection;B;Rövidítések
+77;3;Mi a d_proc rövidítés feloldása?;A) Propagation delay;B) Processing delay;C) Protocol delay;D) Packet delay;B;Rövidítések
+78;3;Mi a d_queue rövidítés feloldása?;A) Quality of service;B) Queuing delay;C) Quantity of users;D) Quota management;B;Rövidítések
+79;3;Mit jelent a SAP rövidítés a réteg elv kapcsán?;A) Service Access Point;B) System Application Program;C) Standard Access Protocol;D) Software Architecture Platform;A;Rövidítések
+80;3;Mi a PDU rövidítés feloldása a protokollarchitektúrákban?;A) Packet Data Unit;B) Protocol Data Unit;C) Process Data Unit;D) Physical Data Unit;B;Rövidítések
+81;3;Mi az STP rövidítés feloldása az Ethernet hálózatokban?;A) Secure Transfer Protocol;B) Spanning Tree Protocol;C) Simple Transport Protocol;D) Standard Tree Protocol;B;Rövidítések
+82;3;Mi az FCS rövidítés feloldása az Ethernet keretben?;A) Frame Control System;B) Fast Check Sequence;C) Frame Check Sequence;D) File Control System;C;Rövidítések
+83;3;Mi a FSK rövidítés feloldása?;A) Frequency Shift Keying;B) Fast Spectrum Keying;C) Frame Shift Keying;D) Forward Stream Keying;A;Rövidítések
+84;3;Mit jelent az ASK rövidítés?;A) Analog Signal Keying;B) Amplitude Shift Keying;C) Asynchronous Signal Keying;D) Advanced System Keying;B;Rövidítések
+85;3;Mi a PSK rövidítés feloldása?;A) Phase Shift Keying;B) Protocol Signal Keying;C) Pulse Shift Keying;D) Packet Switching Keying;A;Rövidítések
+86;3;Mi a QAM rövidítés feloldása?;A) Quality Amplitude Modulation;B) Quadrature Amplitude Modulation;C) Quantitative Amplitude Modulation;D) Quaternary Amplitude Modulation;B;Rövidítések
+87;3;Mi a CDMA rövidítés feloldása?;A) Common Data Multiple Access;B) Code Division Multiple Access;C) Carrier Division Multiple Access;D) Centralized Data Management Access;B;Rövidítések
+88;3;Mi az RTT rövidítés feloldása a TCP-ben?;A) Real-time Transfer Time;B) Round-Trip Time;C) Reliable Transmission Time;D) Rerouted Transmission Time;B;Rövidítések
+89;3;Mit jelent az MSS rövidítés a TCP-ben?;A) Maximum Server Size;B) Maximum Segment Size;C) Media Stream Service;D) Main System Software;B;Rövidítések
+90;3;Mi a RARP rövidítés?;A) Reliable Address Resolution Protocol;B) Reverse Address Resolution Protocol;C) Routing And Resource Protocol;D) Real-time Access and Reporting Protocol;B;Rövidítések
+91;3;Mi az IGP rövidítés feloldása a routing protokolloknál?;A) Internet Group Protocol;B) Interior Gateway Protocol;C) International Gateway Protocol;D) Integrated Gateway Protocol;B;Rövidítések
+92;3;Mit jelent az EGP rövidítés a routing protokolloknál?;A) Enhanced Gateway Protocol;B) Exterior Gateway Protocol;C) Enterprise Gateway Protocol;D) External Group Protocol;B;Rövidítések
+93;3;Mi az OSPF rövidítés feloldása?;A) Open Shortest Path First;B) Optimized Shortest Path First;C) Open Standard Protocol Function;D) Overall System Performance Factor;A;Rövidítések
+94;3;Mi a BGP rövidítés feloldása?;A) Border Gateway Protocol;B) Basic Gateway Protocol;C) Best Grouping Protocol;D) Broadband Gateway Protocol;A;Rövidítések
+95;3;Mit jelent az MTU rövidítés?;A) Maximum Transmission Unit;B) Mobile Terminal Unit;C) Media Transfer Unit;D) Main Transmission Unit;A;Rövidítések
+96;3;Mi a CIDR rövidítés feloldása?;A) Classless Inter-Domain Routing;B) Centralized Internet Domain Routing;C) Common Inter-Domain Routing;D) Content Independent Data Routing;A;Rövidítések
+97;3;Mi az E.164 ajánlás?;A) Ethernet szabvány;B) Nemzetközi telefonszámozás;C) Mobiltelefon azonosító;D) Internet protokoll;B;Rövidítések
+98;3;Mit jelent a DTMF rövidítés?;A) Digital Transmission Modulation Frequency;B) Dual Tone MultiFrequency;C) Data Transfer Management Function;D) Dynamic Time Multiplexing Format;B;Rövidítések
+99;3;Mi az IMS rövidítés feloldása?;A) Internet Mobile Services;B) IP Multimedia Subsystem;C) Integrated Messaging System;D) International Mobile Standard;B;Rövidítések
+100;3;Mi az SDP rövidítés feloldása?;A) Secure Data Protocol;B) Session Description Protocol;C) System Design Protocol;D) Standard Data Processing;B;Rövidítések
+101;3;Mi a PIM rövidítés feloldása multicast routingban?;A) Packet Internet Multicast;B) Protocol Independent Multicast;C) Private Internet Messaging;D) Parallel Interface Module;B;Rövidítések
+102;3;Mit jelent a GOP rövidítés a videókódolásban?;A) General Output Protocol;B) Group of Pictures;C) Global Object Protocol;D) Graphics Optimization Program;B;Rövidítések
+103;3;Mi a TS rövidítés feloldása az MPEG-2-nél?;A) Time Stamp;B) Transport Stream;C) Transcoding Service;D) Teletext Stream;B;Rövidítések
+104;3;Mit jelent a PID rövidítés a TS csomag fejlécében?;A) Packet Identifier;B) Program Information Descriptor;C) Protocol ID;D) Priority Identification;A;Rövidítések
+105;3;Mit jelent az DRM rövidítés az IPTV-ben?;A) Digital Rights Management;B) Dynamic Routing Mechanism;C) Data Recovery Module;D) Digital Radio Modulation;A;Rövidítések
+106;3;Mi az IntServ rövidítés feloldása?;A) Internet Service;B) Integrated Services;C) Internal Service;D) Interactive Services;B;Rövidítések
+107;3;Mit jelent a DiffServ rövidítés?;A) Differentiated Services;B) Digital Service;C) Dynamic Service;D) Direct Service;A;Rövidítések
+108;3;Mi a BSS rövidítés feloldása Wi-Fi-ben?;A) Base Station Subsystem;B) Basic Service System;C) Broadband Service Subsystem;D) Business Support System;A;Rövidítések
+109;3;Mit jelent a ESS rövidítés Wi-Fi-ben?;A) Extended Service Set;B) Enhanced Security System;C) External Source Server;D) Ethernet Switching Standard;A;Rövidítések
+110;3;Mi a MAC rövidítés feloldása az adatkapcsolati rétegben?;A) Main Access Control;B) Medium Access Control;C) Mobile Access Connection;D) Media Adapter Controller;B;Rövidítések
+111;3;Mi a MAN rövidítés feloldása?;A) Mobile Area Network;B) Metropolitan Area Network;C) Main Access Network;D) Managed Area Network;B;Rövidítések
+112;3;Mit jelent a SAN rövidítés?;A) System Area Network;B) Storage Area Network;C) Service Access Network;D) Secure Access Network;B;Rövidítések
+113;3;Mi a MANET rövidítés feloldása?;A) Metropolitan Area Network Extended;B) Mobile Ad Hoc Network;C) Multi-Access Network Enabled;D) Managed Ad Hoc Network;B;Rövidítések
+114;3;Mit jelent a VANET rövidítés?;A) Versatile Ad hoc Network Extension;B) Vehicular Ad hoc Network;C) Virtual Area Network Enhancement;D) Voice Activated Network;B;Rövidítések
+115;3;Mi az ISM rövidítés feloldása a frekvenciasávoknál?;A) Internet System Management;B) Industrial, Scientific, Medical;C) Integrated Service Module;D) International Standard Measurements;B;Rövidítések
+116;3;Mit jelent az RTS rövidítés Wi-Fi-ben?;A) Ready To Send;B) Request To Send;C) Real-time System;D) Routing Table Service;B;Rövidítések
+117;3;Mi a CTS rövidítés feloldása Wi-Fi-ben?;A) Clear To Send;B) Control To Send;C) Connection Test Signal;D) Carrier Transmission System;A;Rövidítések
+118;3;Mi a CSMA/CA rövidítés feloldása?;A) Carrier Sense Multiple Access with Collision Avoidance;B) Collision Sensing Multiple Access with Collision Avoidance;C) Common System Management Access with Centralized Authority;D) Contention Service Multiple Access with Coherent Avoidance;A;Rövidítések
+119;3;Mi a CA rövidítés feloldása 4G LTE-ben?;A) Control Access;B) Carrier Aggregation;C) Channel Allocation;D) Centralized Authentication;B;Rövidítések
+120;3;Mit jelent a MIMO rövidítés?;A) Mobile Internet Management Operations;B) Multiple Input, Multiple Output;C) Multimedia Information Model Optimization;D) Managed Internet Monitoring Organization;B;Rövidítések
+121;3;Mi az eMBB rövidítés feloldása 5G alkalmazási csoportoknál?;A) energy-efficient Mobile Broadband;B) enhanced Mobile Broadband;C) enterprise Mobile Broadband;D) emerging Mobile Broadband;B;Rövidítések
+122;3;Mit jelent a mMTC rövidítés 5G alkalmazási csoportoknál?;A) multimedia Mobile Type Communications;B) massive Machine Type Communications;C) mobile Machine-to-Cloud;D) multi-mode Terminal Communications;B;Rövidítések
+123;3;Mi az URLLC rövidítés feloldása 5G alkalmazási csoportoknál?;A) Ultra-Reliable Low-Latency Communications;B) Unified Remote Low-Latency Control;C) Ubiquitous Real-time Local Connectivity;D) User-Requested Low-Latency Computing;A;Rövidítések
+124;3;Mit jelent az FWA rövidítés 5G alkalmazásokban?;A) Flexible Wireless Access;B) Fixed Wireless Access;C) Future Wireless Applications;D) Fast Wireless Access;B;Rövidítések
+125;3;Mi az OFDMA rövidítés feloldása?;A) Orthogonal Frequency Division Multiple Access;B) Optimized Frequency Division Multiple Access;C) Optical Fiber Data Management Access;D) Open-Source Frequency Division Multiple Access;A;Rövidítések
+126;3;Mit jelent az HSS rövidítés mobilhálózatokban?;A) Home Subscriber Server;B) High Speed System;C) Host Switching Station;D) Hypermedia Service System;A;Rövidítések
+127;3;Mi az MME rövidítés 4G LTE hálózatban?;A) Mobile Management Entity;B) Multimedia Messaging Engine;C) Main Mobility Equipment;D) Master Management Endpoint;A;Rövidítések
+128;3;Mi a PGW rövidítés feloldása 4G LTE hálózatban?;A) Packet Gateway;B) Policy Gateway;C) Public Gateway;D) Protocol Gateway;A;Rövidítések
+129;3;Mit jelent az SGW rövidítés 4G LTE hálózatban?;A) Service Gateway;B) Serving Gateway;C) Secure Gateway;D) Signaling Gateway;B;Rövidítések
+130;3;Mi az eNodeB rövidítés feloldása 4G LTE-ben?;A) enhanced NodeB;B) Ethernet NodeB;C) evolved NodeB;D) external NodeB;C;Rövidítések
+131;3;Mi a DAD rövidítés IPv6-ban?;A) Dynamic Address Discovery;B) Duplicate Address Detection;C) Data Access Description;D) Distributed Address Directory;B;Rövidítések
+132;3;Mi a SLAAC rövidítés feloldása IPv6-ban?;A) Secure Local Address Autoconfiguration;B) Stateless Address Autoconfiguration;C) Standard Local Area Access Control;D) System Link Autoconfiguration;B;Rövidítések
+133;3;Mi az NDP rövidítés feloldása IPv6-ban?;A) Network Discovery Protocol;B) Neighbor Discovery Protocol;C) Next Data Protocol;D) Node Duplication Protocol;B;Rövidítések
+134;3;Mit jelent a MLD rövidítés IPv6-ban?;A) Mobile Link Discovery;B) Multicast Listener Discovery;C) Management Layer Detection;D) Message Logging and Debugging;B;Rövidítések
+135;3;Mi a NAPT rövidítés feloldása?;A) Network Address and Port Translation;B) Next Available Port Table;C) Network Access Point Transformation;D) Name and Protocol Translation;A;Rövidítések
+136;3;Mit jelent az SNAT rövidítés?;A) Secure Network Address Translation;B) Source NAT;C) Static Network Address Translation;D) System Name Allocation Table;B;Rövidítések
+137;3;Mi a DNAT rövidítés feloldása?;A) Dynamic Network Address Translation;B) Destination NAT;C) Data Network Address Translation;D) Distributed Network Address Translation;B;Rövidítések
+138;3;Mi a VLR rövidítés mobilhálózatokban?;A) Visitor Location Register;B) Voice Link Register;C) Virtual Local Router;D) Verification Log Register;A;Rövidítések
+139;3;Mit jelent a HLR rövidítés mobilhálózatokban?;A) High Level Router;B) Home Location Register;C) Handover Log Register;D) Host List Register;B;Rövidítések
+140;3;Mi az AuC rövidítés mobilhálózatokban?;A) Access Unit Controller;B) Authentication Center;C) Area Update Controller;D) Authorized User Center;B;Rövidítések
+141;3;Mi a GSM rövidítés feloldása?;A) General Service Mobile;B) Global System for Mobile communications;C) Groupe Spéciale Mobile;D) Generic System Management;B;Rövidítések
+142;3;Mit jelent az MSC rövidítés mobilhálózatokban?;A) Mobile Switching Center;B) Multimedia Service Control;C) Main Switching Controller;D) Master System Connection;A;Rövidítések
+143;3;Mit jelent az BTS rövidítés mobilhálózatokban?;A) Base Transceiver Station;B) Broadband Transmission System;C) Basic Telecommunication Service;D) Backup Transmission Server;A;Rövidítések
+144;3;Mi a BSC rövidítés mobilhálózatokban?;A) Basic Station Controller;B) Base Station Controller;C) Broadband Service Center;D) Billing System Controller;B;Rövidítések
+145;3;Mit jelent az BSS rövidítés mobilhálózatokban?;A) Base Station Subsystem;B) Basic Service System;C) Broadband Service Subsystem;D) Business Support System;A;Rövidítések
+146;3;Mi az IMSI rövidítés feloldása mobilhálózatokban?;A) International Mobile Subscriber Identity;B) Integrated Mobile Service Information;C) Internet Mobile Service Identifier;D) International Multimedia Standard Identifier;A;Rövidítések
+147;3;Mit jelent az IMEI rövidítés mobilhálózatokban?;A) International Mobile Equipment Identity;B) Integrated Mobile Equipment Information;C) Internet Multimedia Equipment Identifier;D) International Mobile Encryption Identifier;A;Rövidítések
+148;3;Mi a MSISDN rövidítés feloldása mobilhálózatokban?;A) Mobile Station ISDN Number;B) Multimedia Service Identifier Number;C) Main Subscriber Identity Network;D) Mobile Switching Identification Number;A;Rövidítések
+149;3;Mi a RNC rövidítés feloldása UMTS-ben?;A) Radio Network Center;B) Radio Network Controller;C) Routing Network Controller;D) Remote Node Controller;B;Rövidítések
+150;3;Mit jelent a FDD rövidítés UMTS-ben?;A) Fast Duplex Duplexing;B) Frequency Division Duplexing;C) Full Data Duplexing;D) Frame Division Duplexing;B;Rövidítések
+151;3;Mi a TDD rövidítés feloldása UMTS-ben?;A) Total Data Duplexing;B) Time Division Duplexing;C) Transparent Data Duplexing;D) Transmission Delay Duplexing;B;Rövidítések
+152;3;Mit jelent az AMR-WB rövidítés?;A) Adaptive Multirate - Wideband;B) Advanced Multimedia Recording - Wireless Broadband;C) Analog Mobile Radio - Wideband;D) Audio Management and Recording - Wireless Band;A;Rövidítések
+153;3;Mi a MIME rövidítés feloldása?;A) Mail Integrated Message Extension;B) Multipurpose Internet Mail Extensions;C) Mobile Internet Messaging Engine;D) Multimedia Information Management Engine;B;Rövidítések
+154;3;Mi az HTTP/2 rövidítés feloldása?;A) HyperText Transfer Protocol version 2;B) High-speed Transfer Protocol version 2;C) Home Terminal Transfer Protocol version 2;D) Hybrid Text Transfer Protocol version 2;A;Rövidítések
+155;3;Mi a RAN rövidítés 5G-ben?;A) Radio Access Network;B) Remote Access Node;C) Reliable Access Network;D) Routing Area Network;A;Rövidítések
+156;3;Mit jelent az NR rövidítés 5G-ben?;A) New Radio;B) Network Radio;C) Node Radio;D) Next Radio;A;Rövidítések
+157;3;Mi az H.323 rövidítés?;A) ITU-T standard for multimedia communication over packet networks;B) High-speed Data Transfer protocol;C) Home Network Standard for digital devices;D) Hybrid Communication Protocol for voice and video;A;Rövidítések
+158;3;Mi az LSB rövidítés?;A) Last System Byte;B) Least Significant Bit;C) Local Service Byte;D) Light Signal Byte;B;Rövidítések
+159;3;Mit jelent a MSB rövidítés?;A) Main Service Byte;B) Most Significant Bit;C) Mobile System Byte;D) Master Signal Byte;B;Rövidítések
+160;3;Mit jelent az RIPE NCC rövidítés?;A) Réseaux IP Européens Network Coordination Centre;B) Regional Internet Protocol Engineering Network;C) Research Institute for Packet Exchange Network Control Center;D) Registered Internet Provider European Network Collaboration;A;Rövidítések
+161;4;Mi az IPG rövidítés feloldása az Ethernet keretszerkezetben?;A) Internet Protocol Gateway;B) Interpacket Gap;C) Integrated Packet Group;D) Interface Protocol Generation;B;Rövidítések
+162;4;Mi az RZ rövidítés a vonali kódolásnál?;A) Random Zero;B) Return to Zero;C) Relative Zero;D) Real Zero;B;Rövidítések
+163;4;Mi az AMI rövidítés feloldása a vonali kódolásnál?;A) Amplitude Modulated Inversion;B) Alternate Mark Inversion;C) Asynchronous Mark Inversion;D) Advanced Modulation Interface;B;Rövidítések
+164;4;Mit jelent az SACK rövidítés a TCP-ben?;A) Standard Acknowledgment;B) Selective Acknowledgment;C) Simple Acknowledgment;D) Secure Acknowledgment;B;Rövidítések
+165;4;Mi az AIMD rövidítés feloldása a TCP torlódásvezérlésben?;A) Adaptive Increase - Multiplicative Decrease;B) Additive Increase - Multiplicative Decrease;C) Automatic Information Management and Distribution;D) Advanced Internet Measurement Device;B;Rövidítések
+166;4;Mi az URG bit szerepe a TCP fejlécben?;A) Unreliable Request;B) Urgent Pointer;C) User Reply Group;D) Update Request Gate;B;Rövidítések
+167;4;Mi az IHL rövidítés az IP fejlécben?;A) Internet Header Length;B) Internet Host List;C) Internal Host Location;D) In-band Header Link;A;Rövidítések
+168;4;Mi a ToS rövidítés feloldása az IP fejlécben?;A) Total of Segments;B) Type of Service;C) Transfer over Security;D) Table of Symbols;B;Rövidítések
+169;4;Mi az MDI rövidítés feloldása IPTV-ben?;A) Media Decoding Interface;B) Media Delivery Index;C) Multimedia Data Integrity;D) Mobile Device Interface;B;Rövidítések
+170;4;Mi a PAT rövidítés feloldása az MPEG-2 TS-ben?;A) Program Access Table;B) Program Association Table;C) Packet Allocation Table;D) Priority Assignment Table;B;Rövidítések
+171;4;Mi a PMT rövidítés feloldása az MPEG-2 TS-ben?;A) Program Management Tool;B) Program Map Table;C) Packet Mapping Table;D) Protocol Management Table;B;Rövidítések
+172;4;Mi a PCR rövidítés feloldása az MPEG-2 TS-ben?;A) Program Control Register;B) Packet Control Rate;C) Program Clock Reference;D) Protocol Checksum Ratio;C;Rövidítések
+173;4;Mi a SIFS rövidítés Wi-Fi-ben?;A) Short InterFrame Space;B) Standard Interface Frame Space;C) Secure Interconnection Frame Space;D) System Information Frame Space;A;Rövidítések
+174;4;Mi a DIFS rövidítés Wi-Fi-ben?;A) Data InterFrame Space;B) Distributed InterFrame Space;C) Dynamic Interval Frame Space;D) Digital Interface Frame Space;B;Rövidítések
+175;4;Mi az ICI rövidítés a RouterOS-ben?;A) Inter-Cell Interference;B) Interface Connection Indicator;C) Internal Connection Identifier;D) Internet Connection Information;A;Rövidítések
+176;4;Mi a CUPS rövidítés feloldása 5G-ben?;A) Centralized User Plane Separation;B) Control and User Plane Separation;C) Cloud-based User Plane Services;D) Core Unified Packet Switching;B;Rövidítések
+177;4;Mit jelent az SBA rövidítés 5G architektúrában?;A) Service-Based Architecture;B) System-Based Application;C) Standardized Building Blocks;D) Software-Defined Backbone;A;Rövidítések
+178;4;Mi az NFV rövidítés feloldása 5G architektúrában?;A) Network Function Virtualization;B) Next Generation Firewall;C) National Fiber Vocation;D) New Features Validation;A;Rövidítések
+179;4;Mi az ICIC rövidítés 4G LTE-ben?;A) Intelligent Cell Interference Control;B) Inter-Cell Interference Coordination;C) International Channel Information Control;D) Integrated Cellular Infrastructure Control;B;Rövidítések
+180;4;Mi az ULA rövidítés IPv6-ban?;A) Unique Local IPv6 Unicast Addresses;B) Universal Local Address;C) Unified Link Access;D) User Location Address;A;Rövidítések
+181;4;Mi a DS-Lite rövidítés feloldása?;A) Dual Stack Lite;B) Data Service Lite;C) Digital Subscriber Lite;D) Distributed System Lite;A;Rövidítések
+182;4;Mit jelent az AFTR rövidítés DS-Lite-ban?;A) Address Family Transition Router;B) Automatic Flow Termination Router;C) Advanced Forwarding and Tunneling Router;D) Application Function Translation Router;A;Rövidítések
+183;4;Mi a CLAT rövidítés 464XLAT-ban?;A) Client-side Translator;B) Centralized Local Area Translator;C) Command Line Address Translator;D) Common Layer Address Translator;A;Rövidítések
+184;4;Mit jelent a PLAT rövidítés 464XLAT-ban?;A) Provider-side Translator;B) Public Local Area Translator;C) Protocol Level Address Translator;D) Private Link Access Translator;A;Rövidítések
+185;4;Mi az A+P rövidítés az IPv4 címek szűkösségének enyhítése kapcsán?;A) Address plus Port;B) Access and Protocol;C) Advanced Plus;D) Automatic Packet;A;Rövidítések
+186;4;Mi az EIR rövidítés mobilhálózatokban?;A) Equipment Identity Register;B) External Interface Router;C) Emergency Information Register;D) Encrypted Information Register;A;Rövidítések
+187;4;Mi az OMC rövidítés mobilhálózatokban?;A) Operations and Maintenance Center;B) Overload Management Center;C) Online Monitoring Controller;D) Optimized Mobility Center;A;Rövidítések
+188;4;Mi az MSRN rövidítés mobilhálózatokban?;A) Mobile Station Roaming Number;B) Main Service Routing Number;C) Mobile System Registration Number;D) Multimedia Streaming Routing Number;A;Rövidítések
+189;4;Mi a SGSN rövidítés feloldása GPRS hálózatban?;A) Serving GPRS Support Node;B) Signaling Gateway Support Node;C) Secure Gateway Service Node;D) System GPRS Support Node;A;Rövidítések
+190;4;Mit jelent a GGSN rövidítés GPRS hálózatban?;A) General Gateway Support Node;B) Gateway GPRS Support Node;C) Global Gateway Service Node;D) GSM Gateway System Node;B;Rövidítések
+191;4;Mi az APOP rövidítés POP3-ban?;A) Authenticated Post Office Protocol;B) Active Post Office Protocol;C) Automatic Post Office Protocol;D) Advanced Post Office Protocol;A;Rövidítések
+192;4;Mit jelent a UUencode rövidítés?;A) Unix-to-Unix Encoding;B) Universal User Encoding;C) Unified Upload Encoder;D) Unstructured User Encoding;A;Rövidítések
+193;4;Mi az OUI rövidítés a MAC címekben?;A) Organizational Unique Identifier;B) Output Unit Identifier;C) Operational User Identifier;D) Original Unique Identifier;A;Rövidítések
+194;4;Mit jelent a I/G bit a MAC címekben?;A) Individual/Group;B) Interface/Gateway;C) Input/Output;D) Internet/Global;A;Rövidítések
+195;4;Mi a DSCP rövidítés?;A) Data Service Code Point;B) Differentiated Services Code Point;C) Digital Signal Control Protocol;D) Dynamic Service Classification Point;B;Rövidítések
+196;4;Mit jelent az ECN rövidítés?;A) Early Congestion Notification;B) Extended Connection Negotiation;C) Efficient Control Number;D) Encrypted Channel Network;A;Rövidítések
+197;4;Mi a CU rövidítés 5G-ben?;A) Common Unit;B) Central Unit;C) Communication Unit;D) Core Unit;B;Rövidítések
+198;4;Mi az DU rövidítés 5G-ben?;A) Data Unit;B) Distributed Unit;C) Digital Unit;D) Device Unit;B;Rövidítések
+199;4;Mi az MLO rövidítés Wi-Fi 7-ben?;A) Multiple Link Operations;B) Multi-Link Operation;C) Maximum Link Optimization;D) Mobile Link Overload;B;Rövidítések
+200;4;Mi a CDMA2000 rövidítés?;A) Code Division Multiple Access 2000;B) Common Digital Mobile Access 2000;C) Cellular Data Management Access 2000;D) Centralized Digital Multimedia Access 2000;A;Rövidítések
+201;4;Mi a MEID rövidítés feloldása mobilhálózatokban?;A) Mobile Equipment Identifier;B) Main Equipment Information Database;C) Multimedia Equipment Identification;D) Mobile Enterprise Identity;A;Rövidítések
+202;5;Mi a TPC rövidítés a Wireshark laborban?;A) TCP Packet Capture;B) Test Packet Capture;C) Traffic Packet Counter;D) Total Packet Count;B;Rövidítések
+203;5;Mi az RNC rövidítés feloldása UMTS-ben?;A) Radio Network Center;B) Radio Network Controller;C) Routing Network Controller;D) Remote Node Controller;B;Rövidítések
+204;5;Mi az MEID rövidítés feloldása mobilhálózatokban?;A) Mobile Equipment Identifier;B) Main Equipment Information Database;C) Multimedia Equipment Identification;D) Mobile Enterprise Identity;A;Rövidítések

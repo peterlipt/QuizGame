@@ -69,7 +69,7 @@ import Foundation
         // Filter by category if set.
         var filtered = allQuestions
         if let category = self.selectedCategory {
-            filtered = filtered.filter { $0.category == category }
+            filtered = filtered.filter { $0.category.rawValue == category.rawValue } // Use .rawValue for comparison
         }
         
         // Filter by difficulty if set and not equal to "All".

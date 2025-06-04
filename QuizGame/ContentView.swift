@@ -10,7 +10,7 @@ struct ContentView: View {
     @State private var answerFeedback = ""
     
     // For dropdown menus.
-    @State private var selectedCategory: QuestionTopic? = nil
+    @State private var selectedCategory: QuestionTopic? = QuestionTopic.allCases.first // Default to first category
     @State private var selectedDifficulty: String = "All"
     
     // To highlight the correct answer button when the answer is wrong.

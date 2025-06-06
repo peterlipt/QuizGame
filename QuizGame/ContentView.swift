@@ -129,20 +129,6 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .multilineTextAlignment(.center)
-                            Button("Next Question") {
-                                viewModel.getNextQuestion()
-                            }
-                            .font(.system(size: 20, weight: .medium, design: .rounded))
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.gray.opacity(0.7))
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(nil)
-                            .minimumScaleFactor(0.7)
                         }
                         .padding()
                     }

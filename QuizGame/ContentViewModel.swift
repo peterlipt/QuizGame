@@ -9,6 +9,7 @@ import Foundation
     var difficulties: Array<String> = ["All"]
 
     init() {
+        self.selectedCategory = QuestionTopic.allTopics.first
         self.loadQuestions()
     }
 
@@ -69,7 +70,7 @@ import Foundation
         // Filter by category if set.
         var filtered = allQuestions
         if let category = self.selectedCategory {
-            filtered = filtered.filter { $0.category.rawValue == category.rawValue } // Use .rawValue for comparison
+            filtered = filtered.filter { $0.category.id == category.id } // Use .rawValue for comparison
         }
         
         // Filter by difficulty if set and not equal to "All".

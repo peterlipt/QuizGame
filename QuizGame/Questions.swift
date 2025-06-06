@@ -1,4 +1,3 @@
-
 import Foundation
 
 class Question {
@@ -21,6 +20,6 @@ class Question {
         self.answerC = answerC
         self.answerD = answerD
         self.correctAnswer = correctAnswer
-        self.category = QuestionTopic(rawValue: category) ?? .other
+        self.category = QuestionTopic.getOrCreate(named: category)
     }
 }

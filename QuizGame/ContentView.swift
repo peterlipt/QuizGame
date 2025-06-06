@@ -10,7 +10,7 @@ struct ContentView: View {
     @State private var answerFeedback = ""
     
     // For dropdown menus.
-    @State private var selectedCategory: QuestionTopic? = QuestionTopic.allCases.first // Default to first category
+    @State private var selectedCategory: QuestionTopic? = QuestionTopic.allTopics.first // Default to first category
     @State private var selectedDifficulty: String = "All"
     
     // To highlight the correct answer button when the answer is wrong.
@@ -39,19 +39,17 @@ struct ContentView: View {
                                 viewModel.selectedCategory = nil
                                 viewModel.loadQuestions()
                                 viewModel.getNextQuestion()
-                                // Shuffling will be handled by .onChange or .onAppear of the question block
                             }
-                            ForEach(QuestionTopic.allCases, id: \.self) { category in
-                                Button("\(category.rawValue)") {
+                            ForEach(QuestionTopic.allTopics, id: \ .self) { category in
+                                Button("\(category.name)") {
                                     selectedCategory = category
                                     viewModel.selectedCategory = category
                                     viewModel.loadQuestions()
                                     viewModel.getNextQuestion()
-                                    // Shuffling will be handled by .onChange or .onAppear of the question block
-                                }
+                            }
                             }
                         } label: {
-                            Label("Category: \(selectedCategory?.rawValue ?? "All")",
+                            Label("Category: \(selectedCategory?.name ?? "All")",
                                   systemImage: "line.horizontal.3.decrease.circle")
                                 .foregroundColor(.white)
                                 .padding()
@@ -67,7 +65,6 @@ struct ContentView: View {
                                     viewModel.selectedDifficulty = level
                                     viewModel.loadQuestions()
                                     viewModel.getNextQuestion()
-                                    // Shuffling will be handled by .onChange or .onAppear of the question block
                             }
                                 }
                         } label: {

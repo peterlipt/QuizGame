@@ -16,14 +16,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		878532D52DF3488300F31DDA /* Exceptions for "QuizGame" folder in "QuizGame" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				questions/kerdesek.csv,
-				questions/komhal.csv,
-			);
-			target = 87B133A42D9B1292005120E1 /* QuizGame */;
-		};
 		878532E32DF382FC00F31DDA /* Exceptions for "questions" folder in "QuizGame" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -45,9 +37,6 @@
 		};
 		87B133A72D9B1292005120E1 /* QuizGame */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				878532D52DF3488300F31DDA /* Exceptions for "QuizGame" folder in "QuizGame" target */,
-			);
 			path = QuizGame;
 			sourceTree = "<group>";
 		};

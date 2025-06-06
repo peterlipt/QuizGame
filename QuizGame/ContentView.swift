@@ -179,7 +179,7 @@ struct ContentView: View {
                               systemImage: "line.horizontal.3.decrease.circle")
                             .foregroundColor(.white)
                             .padding()
-                            .background(Color.gray.opacity(0.7))
+                            .background(Color.black.opacity(0.7))
                             .cornerRadius(10)
                     }
                     // Difficulty picker
@@ -197,7 +197,7 @@ struct ContentView: View {
                               systemImage: "slider.horizontal.3")
                             .foregroundColor(.white)
                             .padding()
-                            .background(Color.gray.opacity(0.7))
+                            .background(Color.black.opacity(0.7))
                             .cornerRadius(10)
                     }
                     // CSV fájl választó
@@ -215,7 +215,7 @@ struct ContentView: View {
                         Label("Kérdésfájl: \(viewModel.selectedCSVFile)", systemImage: "doc")
                             .foregroundColor(.white)
                             .padding()
-                            .background(Color.gray.opacity(0.7))
+                            .background(Color.black.opacity(0.7))
                             .cornerRadius(10)
                     }
                     Button("Bezárás") {
@@ -228,7 +228,7 @@ struct ContentView: View {
                     .padding(.bottom)
                 }
                 .frame(maxWidth: 350)
-                .background(Color.black.opacity(0.95))
+                .background(Color.gray)
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .padding()

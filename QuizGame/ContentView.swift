@@ -82,13 +82,7 @@ struct ContentView: View {
                             }
                             
                             if showFeedback {
-                                Text(answerFeedback)
-                                    .font(.system(size: 22, weight: .semibold, design: .rounded))
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .transition(.opacity)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .multilineTextAlignment(.center)
+                                Spacer().frame(height: 10)
                             }
                             if showNextButton {
                                 Button("Következő kérdés") {
@@ -172,7 +166,7 @@ struct ContentView: View {
                             viewModel.loadQuestions()
                             viewModel.getNextQuestion()
                         }
-                        ForEach(QuestionTopic.allTopics, id: \ .self) { category in
+                        ForEach(viewModel.availableCategories, id: \.self) { category in
                             Button("\(category.name)") {
                                 selectedCategory = category
                                 viewModel.selectedCategory = category
@@ -201,6 +195,24 @@ struct ContentView: View {
                     } label: {
                         Label("Nehézség: \(selectedDifficulty)",
                               systemImage: "slider.horizontal.3")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.gray.opacity(0.7))
+                            .cornerRadius(10)
+                    }
+                    // CSV fájl választó
+                    Menu {
+                        ForEach(viewModel.availableCSVFiles, id: \.self) { file in
+                            Button(file) {
+                                viewModel.selectedCSVFile = file
+                                viewModel.loadQuestions()
+                                // Frissítsük a UI-n a kategória kiválasztást is
+                                self.selectedCategory = viewModel.selectedCategory
+                                viewModel.getNextQuestion()
+                            }
+                        }
+                    } label: {
+                        Label("Kérdésfájl: \(viewModel.selectedCSVFile)", systemImage: "doc")
                             .foregroundColor(.white)
                             .padding()
                             .background(Color.gray.opacity(0.7))

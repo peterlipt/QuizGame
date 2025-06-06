@@ -20,6 +20,7 @@ struct ContentView: View {
     
     // New state for shuffled answer texts
     @State private var shuffledAnswerTexts: [String] = []
+    @State private var showSettings = false
     
     var body: some View {
         ZStack {
@@ -28,55 +29,18 @@ struct ContentView: View {
                            endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             
-            ScrollView { // <-- ScrollView hozzáadva
+            ScrollView {
                 VStack {
-                    // Top bar with dropdown menus.
+                    // Top bar with settings button and questions remaining
                     HStack {
-                        // Category picker.
-                        Menu {
-                            Button("All") {
-                                selectedCategory = nil
-                                viewModel.selectedCategory = nil
-                                viewModel.loadQuestions()
-                                viewModel.getNextQuestion()
-                            }
-                            ForEach(QuestionTopic.allTopics, id: \ .self) { category in
-                                Button("\(category.name)") {
-                                    selectedCategory = category
-                                    viewModel.selectedCategory = category
-                                    viewModel.loadQuestions()
-                                    viewModel.getNextQuestion()
-                            }
-                            }
-                        } label: {
-                            Label("Category: \(selectedCategory?.name ?? "All")",
-                                  systemImage: "line.horizontal.3.decrease.circle")
+                        Button(action: { showSettings.toggle() }) {
+                            Image(systemName: "gearshape")
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color.gray.opacity(0.7))
                                 .cornerRadius(10)
                         }
-                        
-                        // Difficulty picker.
-                        Menu {
-                            ForEach(viewModel.difficulties, id: \.self) { level in
-                                Button(level) {
-                                    selectedDifficulty = level
-                                    viewModel.selectedDifficulty = level
-                                    viewModel.loadQuestions()
-                                    viewModel.getNextQuestion()
-                            }
-                                }
-                        } label: {
-                            Label("Difficulty: \(selectedDifficulty)",
-                                  systemImage: "slider.horizontal.3")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.gray.opacity(0.7))
-                                .cornerRadius(10)
-                        }
-                        
-                        // Questions remaining counter
+                        Spacer()
                         Text("Hátravan: \(viewModel.questions.count)")
                             .foregroundColor(.white)
                             .padding(.horizontal)
@@ -189,6 +153,73 @@ struct ContentView: View {
                         .padding()
                     }
                 }
+            }
+            // Settings sheet
+            if showSettings {
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+                    .onTapGesture { showSettings = false }
+                VStack(spacing: 24) {
+                    Text("Beállítások")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .padding(.top)
+                    // Category picker
+                    Menu {
+                        Button("All") {
+                            selectedCategory = nil
+                            viewModel.selectedCategory = nil
+                            viewModel.loadQuestions()
+                            viewModel.getNextQuestion()
+                        }
+                        ForEach(QuestionTopic.allTopics, id: \ .self) { category in
+                            Button("\(category.name)") {
+                                selectedCategory = category
+                                viewModel.selectedCategory = category
+                                viewModel.loadQuestions()
+                                viewModel.getNextQuestion()
+                            }
+                        }
+                    } label: {
+                        Label("Kategória: \(selectedCategory?.name ?? "All")",
+                              systemImage: "line.horizontal.3.decrease.circle")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.gray.opacity(0.7))
+                            .cornerRadius(10)
+                    }
+                    // Difficulty picker
+                    Menu {
+                        ForEach(viewModel.difficulties, id: \.self) { level in
+                            Button(level) {
+                                selectedDifficulty = level
+                                viewModel.selectedDifficulty = level
+                                viewModel.loadQuestions()
+                                viewModel.getNextQuestion()
+                            }
+                        }
+                    } label: {
+                        Label("Nehézség: \(selectedDifficulty)",
+                              systemImage: "slider.horizontal.3")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.gray.opacity(0.7))
+                            .cornerRadius(10)
+                    }
+                    Button("Bezárás") {
+                        showSettings = false
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue.opacity(0.7))
+                    .cornerRadius(10)
+                    .padding(.bottom)
+                }
+                .frame(maxWidth: 350)
+                .background(Color.black.opacity(0.95))
+                .cornerRadius(20)
+                .shadow(radius: 20)
+                .padding()
             }
         }
         .onAppear {

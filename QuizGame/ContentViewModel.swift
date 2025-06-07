@@ -127,8 +127,11 @@ import Foundation
                     let correctAnswer = columns[7].trimmingCharacters(in: .whitespacesAndNewlines)
                     let category = columns[8].trimmingCharacters(in: .whitespacesAndNewlines)
                     
-                    // Create a Question instance.
-                    let question = Question(index: index, difficulty: difficulty, questionText: questionText, answerA: answerA, answerB: answerB, answerC: answerC, answerD: answerD, correctAnswer: correctAnswer, category: category)
+                    // Get or create the appropriate QuestionTopic
+                    let categoryTopic = QuestionTopic.getOrCreate(named: category)
+                    
+                    // Create a Question instance with the QuestionTopic object directly
+                    let question = Question(index: index, difficulty: difficulty, questionText: questionText, answerA: answerA, answerB: answerB, answerC: answerC, answerD: answerD, correctAnswer: correctAnswer, category: categoryTopic)
                     questions.append(question)
                 }
                 difficulties = difficulties.sorted {
@@ -147,18 +150,26 @@ import Foundation
     }
     
     func loadQuestions() {
+        let previouslySelectedCategory = self.selectedCategory
         // Töröljük a kategóriákat fájlváltáskor
         self.availableCategories.removeAll()
         self.selectedCategory = nil
         guard let allQuestions = readAllQuestions(from: selectedCSVFile) else {
-            print("Cannot load questions from \(selectedCSVFile)!")
+            print("Cannot load questions from \\(selectedCSVFile)!")
             return
         }
         // Kategóriák szűrése az aktuális fájl alapján
         let uniqueCategories = Array(Set(allQuestions.map { $0.category })).sorted { $0.name < $1.name }
         self.availableCategories = uniqueCategories
-        // Mindig az első kategóriát válasszuk ki fájlváltás után
-        self.selectedCategory = uniqueCategories.first
+        
+        // Visszaállítjuk a korábban kiválasztott kategóriát, ha még létezik az új fájlban
+        if let prevCategory = previouslySelectedCategory, uniqueCategories.contains(where: { $0.id == prevCategory.id }) {
+            self.selectedCategory = prevCategory
+        } else {
+            // Ha nem, vagy nem volt korábban kiválasztva, akkor az elsőt válasszuk
+            self.selectedCategory = uniqueCategories.first
+        }
+        
         // Filter by category if set.
         var filtered = allQuestions
         if let category = self.selectedCategory {

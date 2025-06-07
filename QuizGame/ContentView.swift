@@ -41,7 +41,7 @@ struct ContentView: View {
                                 .cornerRadius(10)
                         }
                         Spacer()
-                        Text("Hátravan: \(viewModel.questions.count)")
+                        Text("Hátra van: \(viewModel.questions.count)")
                             .foregroundColor(.white)
                             .padding(.horizontal)
                             .background(Color.black.opacity(0.5))

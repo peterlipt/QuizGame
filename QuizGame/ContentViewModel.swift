@@ -113,7 +113,7 @@ import Foundation
             var questions = [Question]()
             
             for row in dataRows {
-                let columns = row.components(separatedBy: ";")
+                let columns = row.components(separatedBy: ";;")
                 if columns.count >= 9, let index = Int(columns[0].trimmingCharacters(in: .whitespacesAndNewlines)) {
                     let difficulty = columns[1].trimmingCharacters(in: .whitespacesAndNewlines)
                     if !self.difficulties.contains(difficulty) {
